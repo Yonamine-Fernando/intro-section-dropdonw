@@ -1,0 +1,174 @@
+header {
+    display: flex;
+    padding: 30px;
+}
+
+header .logo {
+    align-self: center;
+    margin: 10px 60px 0 0;
+}
+
+.menus{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-principal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Medium-Gray);
+}
+
+.menu-principal img {
+    margin-left: 9px;
+}
+
+.menu-principal li {
+    padding: 10px;
+}
+
+.menu-principal li:hover .arrow {
+    transform: rotate(180deg);
+}
+
+ .menu-principal li:hover {
+    color: var(--Almost-Black);
+    cursor: pointer;
+}
+
+.sub-menu{
+    display: none;
+}
+
+.menu-principal li:hover .sub-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: #ffff;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 100%;
+    font-size: 16px;
+    color: var(--Medium-Gray);
+    cursor: pointer;
+}
+
+.menu-principal li .sub-menu img {
+    margin-right: 12px;
+}
+
+.menu-principal li .sub-menu.features {
+    right: 76%;
+    width: 200px;
+}
+
+.buttons-header {
+    display: flex;
+    gap: 40px;
+}
+
+.buttons-header button {
+    background: none;
+    color: var(--Medium-Gray);
+    border: none;
+    padding: 12px 22px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.buttons-header .register {
+    border: 1.5px solid var(--Medium-Gray);
+    border-radius: 14px;
+
+}
+
+.buttons-header button:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--Almost-Black);
+}
+
+.buttons-header .register:hover {
+    border: 1.5px solid var(--Almost-Black);
+}
+
+.overlay.hidden{
+        width: 100vw;
+        height: 100%;
+        opacity: 0.75;
+        background: #151515;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+header .menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    z-index: 100;
+}
+
+header label {
+    display: flex;
+    flex-direction: column;
+}
+
+header .hamburguer {
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+header .hamburguer:before,
+header .hamburguer:after {
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+header .hamburguer:before {
+    top: -10px;
+}
+
+header .hamburguer:after {
+    bottom: -10px;
+}
+
+header input {
+    display:none;
+}
+
+header input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
+header input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+header input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+

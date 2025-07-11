@@ -1,0 +1,123 @@
+@media(max-width:1230px) {
+
+    main {
+        flex-direction: column-reverse;
+        gap: 50px
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    .information {
+        margin: 0;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .information .title {
+        font-size: 54px;
+    }
+
+    .information .description {
+        width: 80%;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+
+    main picture {
+        width: 30%;
+    }
+
+    .more-btn {
+        align-self: center;
+    }
+
+    .clients {
+        padding: 10px;
+    }
+
+}
+
+@media(max-width: 900px) {
+    header .menu {
+        display: flex;
+    }
+
+    header label {
+        width: 100%;
+    }
+
+
+    header .menus.hidden {
+        display: flex;
+        align-items: start;
+        padding: 0 20px;
+        z-index: 100;
+
+    }
+
+    header .menus {
+        display: none;
+    }
+
+    
+
+    .menus {
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        background-color: var(--Almost-White);
+        width: 240px;
+        right: 0;
+        top: 0px;
+        justify-content: flex-start;
+    }
+
+
+    .menu-principal li:hover .sub-menu {
+        position: initial;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+        margin-top: 15px;
+    }
+
+    .menu-principal {
+        flex-direction: column;
+        gap: 0px;
+        align-items: self-start;
+        top: 10%;
+    }
+
+    .buttons-header {
+        flex-direction: column;
+        top: 10%;
+        gap: 10px;
+        position: relative;
+        width: 100%;
+        align-self: center;
+    }
+
+    
+}
+
+
+
+@media(max-width:728px) {
+    main picture {
+        width: 100%;
+    }
+
+    .information .title {
+        font-size: 45px;
+    }
+
+}
+
+@media(max-width:414px) {
+    .information .title {
+        font-size: 35px;
+    }
+}
