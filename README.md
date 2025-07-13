@@ -1,5 +1,3 @@
-
-
 ## 👋 Bem-vindo(a)!
 
 Obrigado por visitar este projeto!
