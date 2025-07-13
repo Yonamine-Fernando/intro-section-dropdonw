@@ -112,7 +112,7 @@ header .logo {
         z-index: 10;
     }
 
-header .menu {
+header .menu-toggle {
     display: none;
     width: 60px;
     height: 60px;
