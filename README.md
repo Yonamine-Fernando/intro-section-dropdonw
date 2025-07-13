@@ -1,10 +1,4 @@
-Claro! Abaixo está uma versão personalizada do seu `README.md` com base no seu projeto do **Frontend Mentor - Intro section with dropdown navigation**, adaptado ao seu estilo como desenvolvedor front-end em formação:
 
----
-
-# 🚀 Intro Section with Dropdown Navigation
-
-![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)
 
 ## 👋 Bem-vindo(a)!
 
