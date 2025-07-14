@@ -8,6 +8,10 @@ header .logo {
     margin: 10px 60px 0 0;
 }
 
+nav{
+    transition: 0.2s ease-in-out;
+}
+
 .menus{
     display: flex;
     width: 100%;
@@ -110,6 +114,7 @@ header .logo {
         top: 0;
         left: 0;
         z-index: 10;
+        transition: 0.3s ease-in-out;
     }
 
 header .menu-toggle {
